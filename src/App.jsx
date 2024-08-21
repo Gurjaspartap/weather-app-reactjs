@@ -19,7 +19,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e9a36d4dab8ee83a3db346b1488d4116`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={appid}`
       );
       const data = await response.json();
 
@@ -41,7 +41,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e9a36d4dab8ee83a3db346b1488d4116`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={appid}`
       );
       const data = await response.json();
 
